@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 
-
 class SliderLegajo extends Component {
     constructor(props) {
         super(props);
         console.log(props)
     }
-
     render() {
         const settings = {
             dots: false,
@@ -16,9 +14,7 @@ class SliderLegajo extends Component {
             slidesToShow: 1,
             slidesToScroll: 1
         };
-
         return (
-
             <Slider {...settings} className={this.props.propClass} >
                 <div className={this.props.slideClass}>
                     <div className={this.props.containerInnerSlide}>

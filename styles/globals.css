@@ -33,6 +33,7 @@ h2{
   font-size: 2em;
 }
 
+
 .btn-primario{
   text-decoration: none;
   color: white;
@@ -46,4 +47,117 @@ h2{
 .btn-primario:hover{
   background-color: white;
   color: black
+}
+.sliderItemGacetillaGlobal div.slick-prev, .sliderItemGacetillaGlobal div.slick-next {
+  z-index: 4;
+}
+.sliderItemGacetillaGlobal div.slick-prev::before, .sliderItemGacetillaGlobal div.slick-next::before{
+  font-size: 70px;
+  color: rgb(32, 32, 32);
+  z-index: 3;
+}
+
+.menu{
+  background-color: #003B5C;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+}
+.menu > div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.menu ul{
+ list-style-type: none;
+}
+div.innerMenu{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1fr;
+}
+
+.controlsMenu{
+  padding: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerWrapperMenu{
+
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.innerWrapperMenu > div{
+  width: 50%;
+}
+
+.innerWrapperMenu h2{
+  color: #6CACE4
+}
+
+.innerWrapperMenu ul{
+  list-style-type: none;
+}
+.innerWrapperMenu ul li{
+margin-bottom: 2em;
+}
+
+.inputSearch{
+
+  height: 50px;
+  background-color: transparent;
+  padding-left: 12px;
+  color: white;
+  font-size: 1.5em;
+  border: none;
+}
+.inputSearch:focus, .btnSearch:focus{
+  outline: none;
+}
+.btnSearch, .btnCloseMenu{
+  background-color: transparent;
+  border: none;
+}
+
+.btnSearch:hover{
+transform: scale(1.5);
+cursor: pointer;
+}
+
+
+.inputSearch::placeholder{
+  color: white;
+  margin-left: 12px;
+  font-size: 1.5em;
+}
+
+.containerSearchInupt{
+  border: 5px solid white;
+  border-radius: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 1em;
+}
+
+.btnCloseMenu{
+
+}
+
+
+.ShowMenutrue{
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+}
+.ShowMenufalse{
+ display: none;
 }

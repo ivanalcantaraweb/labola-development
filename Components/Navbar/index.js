@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import styles from '../../styles/Navbar.module.css'
 import { useEffect, useState } from 'react'
+import Menu from './Menu'
 
 const Navbar = () => {
     const [date, setDate] = useState()
+    const [showMenu, setShowMenu] = useState(false)
 
     useEffect(() => {
         const fecha = new Date();
@@ -43,8 +45,8 @@ const Navbar = () => {
                             </Link>
                         </li>
 
-                        <li>
-                            <Link href="/">
+                        <li onClick={() => setShowMenu(true)}>
+                            <Link href="/"  >
                                 <a>
                                     MENU
                                 </a>
@@ -53,6 +55,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
+            <Menu showMenu={showMenu} setShowMenu={setShowMenu} />
         </nav>
     )
 }
