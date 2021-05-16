@@ -1,10 +1,9 @@
 import styles from '../../styles/Legajo.module.css'
-import Archivo from '../../Components/PagesComponents/Home/Seccion8'
-import stylesHome from '../../styles/Home.module.css'
+
 import Image from 'next/image'
 import { motion } from 'framer-motion';
 
-const Gacetilla = () => {
+const Colaboradores = () => {
     return (<motion.div
         initial={{ scaleY: 0 }}
         animate={{ scaleY: 1 }}
@@ -12,8 +11,22 @@ const Gacetilla = () => {
         transition={{ duration: 0.5 }}
     >
         <div className={styles.legajoWrapper}>
-            <h1>Consejo editorial</h1>
+            <h1>Colaboradores</h1>
             <div className={styles.innerLegajoWrapper}>
+                <div>
+                    <div className={styles.containerImageLegajo}>
+                        <Image
+                            src="/Assets/Colaboradores/mariana_bs.png"
+                            width="300px"
+                            height="300px"
+                            quality={100}
+                        />
+                    </div>
+
+                    <h4 style={{ color: "black" }}>
+                        mariana_bs
+                     </h4>
+                </div>
                 <div>
                     <div className={styles.containerImageLegajo}>
                         <Image
@@ -71,34 +84,8 @@ const Gacetilla = () => {
                         huitzi_bf
                      </h4>
                 </div>
-                <div>
-                    <div className={styles.containerImageLegajo}>
-                        <Image
-                            src="/Assets/Colaboradores/mariana_bs.png"
-                            width="300px"
-                            height="300px"
-                            quality={100}
-                        />
-                    </div>
 
-                    <h4 style={{ color: "black" }}>
-                        mariana_bs
-                     </h4>
-                </div>
-                <div>
-                    <div className={styles.containerImageLegajo}>
-                        <Image
-                            src="/Assets/Colaboradores/mariana_by.png"
-                            width="300px"
-                            height="300px"
-                            quality={100}
-                        />
-                    </div>
 
-                    <h4 style={{ color: "black" }}>
-                        mariana_bs
-                     </h4>
-                </div>
             </div>
         </div>
 
@@ -106,4 +93,4 @@ const Gacetilla = () => {
     )
 }
 
-export default Gacetilla
+export default Colaboradores

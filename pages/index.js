@@ -10,6 +10,7 @@ import Seccion7 from '../Components/PagesComponents/Home/Seccion7'
 import Seccion8 from '../Components/PagesComponents/Home/Seccion8'
 
 import styles from '../styles/Home.module.css'
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
@@ -20,7 +21,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
-        <Seccion1 styles={styles} />
+        <motion.div initial="hidden" animate="visible" variants={{
+          hidden: {
+            scale: .3,
+            opacity: 1
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 0
+            }
+          },
+        }}>
+          <Seccion1 styles={styles} />
+        </motion.div>
         <Seccion2 styles={styles} />
         <Seccion3 styles={styles} />
         <Seccion4 styles={styles} />

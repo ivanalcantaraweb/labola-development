@@ -4,7 +4,8 @@ import stylesHome from '../../styles/Home.module.css'
 import Image from 'next/image'
 import { motion } from 'framer-motion';
 
-const Gacetilla = () => {
+
+const ConsejoEditorial = () => {
     return (<motion.div
         initial={{ scaleY: 0 }}
         animate={{ scaleY: 1 }}
@@ -12,12 +13,12 @@ const Gacetilla = () => {
         transition={{ duration: 0.5 }}
     >
         <div className={styles.legajoWrapper}>
-            <h1>Consejo editorial</h1>
+            <h1>Legajo</h1>
             <div className={styles.innerLegajoWrapper}>
                 <div>
                     <div className={styles.containerImageLegajo}>
                         <Image
-                            src="/Assets/Colaboradores/agustin_b.png"
+                            src="/Assets/Images/legajo.png"
                             width="300px"
                             height="300px"
                             quality={100}
@@ -25,13 +26,13 @@ const Gacetilla = () => {
                     </div>
 
                     <h4 style={{ color: "black" }}>
-                        agustin_b
+                        Inicio de turismo
                      </h4>
                 </div>
                 <div>
                     <div className={styles.containerImageLegajo}>
                         <Image
-                            src="/Assets/Colaboradores/agustin_ba.png"
+                            src="/Assets/Images/legajo2.png"
                             width="300px"
                             height="300px"
                             quality={100}
@@ -39,13 +40,13 @@ const Gacetilla = () => {
                     </div>
 
                     <h4 style={{ color: "black" }}>
-                        agustin_ba
+                        El robo de los tesoros
                      </h4>
                 </div>
                 <div>
                     <div className={styles.containerImageLegajo}>
                         <Image
-                            src="/Assets/Colaboradores/huitzi.png"
+                            src="/Assets/Images/legajo3.png"
                             width="300px"
                             height="300px"
                             quality={100}
@@ -53,28 +54,13 @@ const Gacetilla = () => {
                     </div>
 
                     <h4 style={{ color: "black" }}>
-                        huitzi
-                     </h4>
-                </div>
-
-                <div>
-                    <div className={styles.containerImageLegajo}>
-                        <Image
-                            src="/Assets/Colaboradores/huitzi_bf.png"
-                            width="300px"
-                            height="300px"
-                            quality={100}
-                        />
-                    </div>
-
-                    <h4 style={{ color: "black" }}>
-                        huitzi_bf
+                        Magdalena de kino
                      </h4>
                 </div>
                 <div>
                     <div className={styles.containerImageLegajo}>
                         <Image
-                            src="/Assets/Colaboradores/mariana_bs.png"
+                            src="/Assets/Images/legajo4.png"
                             width="300px"
                             height="300px"
                             quality={100}
@@ -82,28 +68,14 @@ const Gacetilla = () => {
                     </div>
 
                     <h4 style={{ color: "black" }}>
-                        mariana_bs
-                     </h4>
-                </div>
-                <div>
-                    <div className={styles.containerImageLegajo}>
-                        <Image
-                            src="/Assets/Colaboradores/mariana_by.png"
-                            width="300px"
-                            height="300px"
-                            quality={100}
-                        />
-                    </div>
-
-                    <h4 style={{ color: "black" }}>
-                        mariana_bs
+                        En defensa del paisaje
                      </h4>
                 </div>
             </div>
         </div>
-
+        <Archivo styles={stylesHome} />
     </motion.div>
     )
 }
 
-export default Gacetilla
+export default ConsejoEditorial

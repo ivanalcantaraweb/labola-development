@@ -1,7 +1,7 @@
 #footer{
     height: auto;
     width: 100%;
-    background-color: #003B5C;
+    background-color: var(--azul_corporativo);
     display: grid;
     grid-template-rows: 1fr 0.5fr;
 }

@@ -73,7 +73,7 @@
 }
 
 #section2 h1{
-  color: #003B5C;
+  color: var(--azul_corporativo);
   font-size: 6em;
 }
 
@@ -112,7 +112,7 @@
   width: 100%;
   display: grid;
   height: 100vh;
-  background-color: #003B5C;
+  background-color:  var(--azul_corporativo);
   padding: 3em 0px;
 }
 
@@ -270,7 +270,7 @@ color: white;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #003B5C;
+  background-color: var(--azul_corporativo);
 }
 
 #section6inner{
@@ -323,7 +323,7 @@ color: white;
   background-color: #fbfbfb;
 }
 #section7 h1{
-    color: #003B5C;
+    color:  var(--azul_corporativo);
     font-size: 6em;
 }
 .containerSliderGacetilla{
@@ -359,6 +359,8 @@ color: white;
   height: 80vh;
   position: relative;
 }
+
+
 #section8 img{
   filter: brightness(0.5);
 }

@@ -10,41 +10,42 @@ const Menu = (props) => {
                     <li>
                         <Image src="/Assets/Images/logo.png" width="100px" height="100px" />
                     </li>
-                    <li>
+                    <li onClick={() => props.setShowMenu(false)}>
                         <Link href="/legajo">
                             <a>
-                                <h1>Legajo</h1>
+                                <h2>Legajo</h2>
                             </a>
                         </Link>
                     </li>
-                    <li>
-                        <Link href="/contrapunto">
+                    <li onClick={() => props.setShowMenu(false)} className="notInfo">
+                        <Link href="#">
                             <a>
-                                <h1>Contrapunto</h1>
+                                <h2>Contrapunto</h2>
 
                             </a>
                         </Link>
                     </li>
-                    <li>
+                    <li onClick={() => props.setShowMenu(false)} >
                         <Link href="/multimedia">
                             <a>
 
-                                <h1>Multimedia</h1>
+                                <h2>Multimedia</h2>
                             </a>
                         </Link>
                     </li>
-                    <li>
+                    <li onClick={() => props.setShowMenu(false)}>
                         <Link href="/almanaque">
                             <a>
-                                <h1>Almanaque</h1>
+                                <h2>Almanaque</h2>
                             </a>
                         </Link>
                     </li>
-                    <li><Link href="/gacetilla">
-                        <a>
-                            <h1>Gacetilla</h1>
-                        </a>
-                    </Link>
+                    <li onClick={() => props.setShowMenu(false)} >
+                        <Link href="/gacetilla">
+                            <a>
+                                <h2>Gacetilla</h2>
+                            </a>
+                        </Link>
                     </li>
 
                 </ul>
@@ -66,45 +67,45 @@ const Menu = (props) => {
                 <div className="innerWrapperMenu">
                     <div>
                         <ul>
-                            <li>
-                                <Link href="/consejo">
-                                    <a>
-                                        <h2>Consejo Editorial</h2>
+                            <li onClick={() => props.setShowMenu(false)} >
+                                <Link href="/consejo-editorial">
+                                    <a >
+                                        <h3>Consejo Editorial</h3>
                                     </a>
                                 </Link>
                             </li>
-                            <li>
-                                <Link href="/consejo-honorario">
+                            <li onClick={() => props.setShowMenu(false)} >
+                                <Link href="/consejo-honorario" >
                                     <a>
-                                        <h2>Consejo honorario</h2>
+                                        <h3>Consejo honorario</h3>
                                     </a>
                                 </Link>
                             </li>
-                            <li>
-                                <Link href="/legajo">
+                            <li onClick={() => props.setShowMenu(false)} >
+                                <Link href="/colaboradores" >
                                     <a>
-                                        <h2>Colaboradores</h2>
+                                        <h3>Colaboradores</h3>
                                     </a>
                                 </Link>
                             </li>
-                            <li>
-                                <Link href="/legajo">
+                            <li onClick={() => props.setShowMenu(false)} className="notInfo">
+                                <Link href="/convocatorias">
                                     <a>
-                                        <h2>Convocatorias</h2>
+                                        <h3>Convocatorias</h3>
                                     </a>
                                 </Link>
                             </li>
-                            <li>
-                                <Link href="/legajo">
+                            <li onClick={() => props.setShowMenu(false)} className="notInfo">
+                                <Link href="/normas">
                                     <a>
-                                        <h2>Normas editoriales</h2>
+                                        <h3>Normas editoriales</h3>
                                     </a>
                                 </Link>
                             </li>
-                            <li>
-                                <Link href="/legajo">
+                            <li onClick={() => props.setShowMenu(false)} className="notYet">
+                                <Link href="/archivo">
                                     <a>
-                                        <h2>Archivo</h2>
+                                        <h3>Archivo</h3>
                                     </a>
                                 </Link>
                             </li>
@@ -115,44 +116,44 @@ const Menu = (props) => {
 
 
                             <li>
-                                <Link href="/legajo">
+                                <Link href="www.facebook.com">
                                     <a>
-                                        <h2>Facebook</h2>
+                                        <h3>Facebook</h3>
                                     </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/legajo">
+                                <Link href="www.twitter.com">
                                     <a>
-                                        <h2>Twitter</h2>
+                                        <h3>Twitter</h3>
                                     </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/legajo">
+                                <Link href="www.instagram.com"  >
                                     <a>
-                                        <h2>Instagram</h2>
+                                        <h3>Instagram</h3>
                                     </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/legajo">
+                                <Link href="www.youtube.com" >
                                     <a>
-                                        <h2>Youtube</h2>
+                                        <h3>Youtube</h3>
                                     </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/legajo">
+                                <Link href="www.spotify.com" >
                                     <a>
-                                        <h2>Spotify</h2>
+                                        <h3>Spotify</h3>
                                     </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/legajo">
+                                <Link href="#" >
                                     <a>
-                                        <h2>Suscribete</h2>
+                                        <h3>Suscribete</h3>
                                     </a>
                                 </Link>
                             </li>

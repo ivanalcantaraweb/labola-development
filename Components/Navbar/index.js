@@ -46,11 +46,10 @@ const Navbar = () => {
                         </li>
 
                         <li onClick={() => setShowMenu(true)}>
-                            <Link href="/"  >
-                                <a>
-                                    MENU
-                                </a>
-                            </Link>
+                            <a>
+                                MENU
+
+                            </a>
                         </li>
                     </ul>
                 </div>
